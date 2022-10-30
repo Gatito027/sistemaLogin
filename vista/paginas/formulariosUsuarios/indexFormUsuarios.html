@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<!--<link rel="stylesheet" href="../../css/cssIndex.css">-->
+	<link rel="stylesheet" href="../../css/cssMenu.css">
+	<link rel="stylesheet" href="../../vendor/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="../../css/cssIndexForm.css">
+</head>
+<body>
+    <div id="contenedorPrincipal">
+		<nav id="menu1">
+			<ul id="menu">
+				<li><a href="insertarUsuario.php" class="active" id="formularioInsertar" target="iframeFormulario"><i class="fa-sharp fa-solid fa-plus"></i> Insertar</a></li>
+				<li><a href="eliminarUsuario.php" id="formularioEliminar" target="iframeFormulario"><i class="fa-sharp fa-solid fa-circle-xmark"></i> Eliminar</a></li>
+                <li><a href="actualizarUsuario.php" id="formularioEliminar" target="iframeFormulario"><i class="fa-sharp fa-solid fa-pen-nib"></i> Editar</a></li>
+				<li><a href="tablaUsuarios.php" id="galeria" target="iframeFormulario"><i class="fa-sharp fa-solid fa-book"></i> Tabla</a></li>
+			</ul>
+		</nav>
+		<section id="formularios">
+			<iframe img id="iframeFormulario" name="iframeFormulario" src="insertarUsuario.php" frameborder="0">
+			</iframe>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="../vendor/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" href="../vendor/alertifyjs/css/alertify.css">
+</head>
+<script>
+    function mensaje() {
+        alertify
+            .alert("Hola", function () {
+                alertify.message('ok');
+            });
+    }
+</script>
+
+<body onload="mensaje();"><br>
+    <div id="formularioLogin">
+        <div class="container mt-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sn-6 col-md-4 col-lg-3 mt-2">
+                    <center>
+                        <form id="frmLogin" name="frmLogin" action="../../controlador/ctlLogin.php" target="_blank" class="was-validated" method="post">
+                            <label for="">
+                                <h1>Login</h1>
+                            </label>
+                            <br>
+                            <div id="form-group">
+                                <label for="uname">Usuario:</label><br>
+                                <input type="text" name="txtUsuario" id="txtUsuario uname" class="form-control"
+                                    placeholder="Ingrese el usuario" required>
+                                <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Llena este campo.</div>
+                            </div>
+                            <br>
+                            <div id="form-group">
+                                <label for="pwd">Contraseña:</label><br>
+                                <input type="password" name="txtClave" id="txtClave pwd" class="form-control"
+                                    placeholder="Ingrese su contraseña" required>
+                                <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Llena este campo.</div>
+                                <br>
+                                <center><input type="submit" value="Entrar" name="btnEntrar" id="btnEntrar"
+                                        class="btn btn-primary">
+                                    <input type="reset" value="Cancelar" name="btnCancelar" id="btnCancelar"
+                                        class="btn btn-danger">
+                                    <br><br>
+                                    <a rel="stylesheet" href="#" class="btn btn-outline-success">¿Olvidaste tu
+                                        contraseña?</a>
+                                </center>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
